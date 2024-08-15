@@ -1,0 +1,8 @@
+def max_favorite_songs(s, k):
+    return max(s[i:i+k].count('f') for i in range(len(s) - k + 1))
+
+s = "Defghfgf"
+k = 3
+print(max_favorite_songs(s, k))  
+
+# Output: 2
